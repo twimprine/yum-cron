@@ -7,7 +7,9 @@ license          'Apache-2.0'
 chef_version     '>= 12.18' if respond_to?(:chef_version)
 description      'Installs/Configures yum-cron'
 long_description 'Installs/Configures yum-cron'
-version          '1.0.0'
+version          '1.0.1'
 
 supports         'centos', '~> 6.0'
 supports         'centos', '~> 7.0'
+supports         'rhel',   '~> 6.0'
+supports         'rhel',   '~> 7.0'

@@ -17,6 +17,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+if node['platform_family'] == 'rhel' and node['platform'] != 'centos'
+  include_recipe 'yum-cron::_rhel'
+end
+
 package 'yum-cron'
 
 %w(daily hourly).each do |t|
